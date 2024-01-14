@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/headlineFragment2">
+
+    <fragment
+        android:id="@+id/headlineFragment2"
+        android:name="com.programmingz.newsapp.ui.fragment.HeadlineFragment"
+        android:label="HeadlineFragment" >
+        <action
+            android:id="@+id/action_headlineFragment2_to_articalFragment"
+            app:destination="@id/articalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articalFragment"
+        android:name="com.programmingz.newsapp.ui.fragment.ArticalFragment"
+        android:label="fragment_artical"
+        tools:layout="@layout/fragment_artical" />
+    <fragment
+        android:id="@+id/favouriteFragment2"
+        android:name="com.programmingz.newsapp.ui.fragment.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" >
+        <action
+            android:id="@+id/action_favouriteFragment2_to_articalFragment"
+            app:destination="@id/articalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.programmingz.newsapp.ui.fragment.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_articalFragment"
+            app:destination="@id/articalFragment" />
+    </fragment>
+</navigation>
