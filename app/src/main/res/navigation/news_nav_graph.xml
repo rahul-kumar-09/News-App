@@ -9,6 +9,10 @@
         android:id="@+id/headlineFragment2"
         android:name="com.programmingz.newsapp.ui.fragment.HeadlineFragment"
         android:label="HeadlineFragment" >
+        <argument
+            android:name="article"
+            app:argType="com.programmingz.newsapp.models.Article"/>
+
         <action
             android:id="@+id/action_headlineFragment2_to_articalFragment"
             app:destination="@id/articalFragment" />
